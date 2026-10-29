@@ -1,0 +1,41 @@
+F2 TALK — TELEFONDAN BAŞLAMA VƏ APK HAZIRLAMA
+
+BU ZIP NƏDİR?
+Bu, F2 TALK üçün mənbə layihəsidir. Hazır APK deyil. APK-nı sonradan özün hazırlaya bilərsən.
+
+1. TELEFONDAN LAYİHƏNİ AÇ
+- ZIP-i telefona yüklə və arxiv proqramı ilə çıxart.
+- Qovluğun içində package.json, app/, components/ və public/ olmalıdır.
+- GitHub-a yeni repository yarat və layihə fayllarını yüklə.
+
+2. SAYTI İŞLƏK ET
+- Next.js dəstəkləyən bulud mühitinə/hostinqə GitHub repository-ni qoş.
+- Clerk hesabında tətbiq yarat və bu dəyişənləri hostinqin Environment Variables bölməsinə əlavə et:
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  CLERK_SECRET_KEY
+- Stream Chat hesabında tətbiq yarat və əlavə et:
+  NEXT_PUBLIC_STREAM_API_KEY
+  STREAM_API_KEY
+  STREAM_SECRET
+- STREAM_SECRET və CLERK_SECRET_KEY gizli saxlanmalıdır. Onları frontend koduna və ya GitHub-a qoyma.
+- Deploy et və saytın HTTPS ünvanını açaraq giriş/çat funksiyalarını yoxla.
+
+3. ÖZÜN APK HAZIRLA (TELEFONDAN)
+- Əvvəl saytın HTTPS ünvanı işləməlidir.
+- Telefonda brauzerdən https://www.pwabuilder.com/ aç.
+- Saytının HTTPS ünvanını daxil et və yoxlamanı başlat.
+- PWA manifesti və ikonalarla bağlı xəbərdarlıqları düzəlt.
+- Android paketləmə seçimi mövcud olarsa, onun təlimatlarını izlə. Bəzi hallarda imzalama açarı və əlavə Android build mühiti tələb oluna bilər.
+- Yaradılan APK/AAB-ni quraşdırmadan əvvəl təhlükəsizlik və cihaz uyğunluğunu yoxla.
+
+QEYD: PWABuilder və ya başqa servis bu layihəni avtomatik tam yerli Android tətbiqinə çevirməyə zəmanət vermir. Next.js API marşrutları serverdə işləyir; sadəcə statik faylları APK-yə yığmaq kifayət deyil. Tətbiqin işləməsi üçün yayımlanmış HTTPS backend lazımdır.
+
+TƏTBİQ MƏLUMATLARI
+Ad: F2 TALK
+Qısa ad: F2 TALK
+Təsvir: Dostlarla söhbət və icma platforması
+Dil: Azərbaycan dili (az)
+Brend rəngləri: tünd fon, ağ söhbət işarələri, neon bənövşəyi
+Slug: f2-talk
+
+Gizli açarları heç kimə göndərmə. Pulsuz planların limitləri ola bilər.

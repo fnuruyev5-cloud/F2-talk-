@@ -1,0 +1,23 @@
+{
+  "name": "F2 TALK — Söhbət və İcma",
+  "short_name": "F2 TALK",
+  "description": "F2 TALK: şəxsi və qrup söhbətləri üçün mobil uyğun icma tətbiqi. Funksiyalar xidmətlər qoşulduqdan sonra işləyir.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08070d",
+  "theme_color": "#8b3dff",
+  "icons": [
+    {
+      "src": "/f2-talk-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "az",
+  "orientation": "portrait-primary",
+  "categories": [
+    "social",
+    "communication"
+  ]
+}
